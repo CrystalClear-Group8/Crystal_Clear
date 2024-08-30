@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Elements Quiz</title>
+    <style>
+a:link, a:visited {
+  background-color: white;
+  color: black;
+  border: 2px solid green;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover, a:active {
+  background-color: green;
+  color: white;
+}
+
+</head>
+        }
+        h1 marquee {
+            font-size: 36px; /* Large marquee text */
+            font-weight: bold;
+        }
+        .intro, .feedback {
+            margin-bottom: 20px;
+            font-size: 22px; /* Large intro and feedback text */
+        }
+        .element {
+            margin-bottom: 20px;
+            border: 2px solid #ddd;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        img {
+            max-width: 15%;
+            height: auto;
+            border: 1px solid #ddd;
+            margin-bottom: 10px;
+        }
+        .element a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+        .element a:hover {
+            text-decoration: underline;
+        }
+        ol {
+            padding-left: 20px;
+            font-size: 22px; /* Large list items text */
+        }
+        hr {
+            margin: 20px 0;
+        }
+        .quiz-container {
+            margin-top: 20px;
+        }
+        .quiz-question {
+            margin-bottom: 15px;
+            font-size: 22px; /* Large quiz question text */
+        }
+        button {
+            font-size: 22px; /* Large button text */
+            padding: 10px 20px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+<ul>
+   <a href="interactive.html" target="_blank">Back</a>
+</ul>
+    <!-- Marquee Text -->
+    <h1><marquee>QUIZ!!!</marquee></h1>
+    <hr />
+
+    <!-- Introduction -->
+    <div class="intro">
+        Welcome to the quiz! Please answer the questions below:
+    </div>
+
+    <!-- Quiz Section -->
+    <div class="quiz-container">
+        <form id="quizForm">
+            <div class="quiz-question">
+                <label for="q1">1. What term describes the continuous movement of water within the Earth and the atmosphere?</label><br>
+                <input type="radio" id="q1a" name="q1" value="Atmosphere">
+                <label for="q1a">a) Atmosphere</label><br>
+                <input type="radio" id="q1b" name="q1" value="Condensation">
+                <label for="q1b">b) Condensation</label><br>
+                <input type="radio" id="q1c" name="q1" value="Water Cycle">
+                <label for="q1c">c) Water Cycle</label>
+            </div>
+
+            <div class="quiz-question">
+                <label for="q2">2. What part of the water cycle involves liquid water turning into gas?</label><br>
+                <input type="radio" id="q2a" name="q2" value="Precipitation">
+                <label for="q2a">a) Precipitation</label><br>
+                <input type="radio" id="q2b" name="q2" value="Evaporation">
+                <label for="q2b">b) Evaporation</label><br>
+                <input type="radio" id="q2c" name="q2" value="Condensation">
+                <label for="q2c">c) Condensation</label>
+            </div>
+
+            <div class="quiz-question">
+                <label for="q3">3. What is the process called when water vapor turns back into liquid water?</label><br>
+                <input type="radio" id="q3a" name="q3" value="Condensation">
+                <label for="q3a">a) Condensation</label><br>
+                <input type="radio" id="q3b" name="q3" value="Water Droplets">
+                <label for="q3b">b) Water Droplets</label><br>
+                <input type="radio" id="q3c" name="q3" value="Precipitation">
+                <label for="q3c">c) Precipitation</label>
+            </div>
+
+            <div class="quiz-question">
+                <label for="q4">4. What process involves water evaporating into vapor, forming clouds, and then falling back to Earth as rain or snow?</label><br>
+                <input type="radio" id="q4a" name="q4" value="Hail">
+                <label for="q4a">a) Hail</label><br>
+                <input type="radio" id="q4b" name="q4" value="Water Vapor">
+                <label for="q4b">b) Water Vapor</label><br>
+                <input type="radio" id="q4c" name="q4" value="Precipitation">
+                <label for="q4c">c) Precipitation</label>
+            </div>
+
+            <div class="quiz-question">
+                <label for="q5">5. Which element on the periodic table is most closely related to the water cycle?</label><br>
+                <input type="radio" id="q5a" name="q5" value="Oxygen">
+                <label for="q5a">a) Oxygen</label><br>
+                <input type="radio" id="q5b" name="q5" value="Hydrogen">
+                <label for="q5b">b) Hydrogen</label><br>
+                <input type="radio" id="q5c" name="q5" value="Helium">
+                <label for="q5c">c) Helium</label>
+            </div>
+
+            <div class="quiz-question">
+                <label for="q6">6. Which process in the water cycle is essential for providing fresh water to plants and animals?</label><br>
+                <input type="radio" id="q6a" name="q6" value="Condensation">
+                <label for="q6a">a) Condensation</label><br>
+                <input type="radio" id="q6b" name="q6" value="Precipitation">
+                <label for="q6b">b) Precipitation</label><br>
+                <input type="radio" id="q6c" name="q6" value="Evaporation">
+                <label for="q6c">c) Evaporation</label>
+            </div>
+
+            <div class="quiz-question">
+                <label for="q7">7. During which stage of the water cycle does the element Hydrogen play a crucial role in forming water vapor?</label><br>
+                <input type="radio" id="q7a" name="q7" value="Precipitation">
+                <label for="q7a">a) Precipitation</label><br>
+                <input type="radio" id="q7b" name="q7" value="Evaporation">
+                <label for="q7b">b) Evaporation</label><br>
+                <input type="radio" id="q7c" name="q7" value="Condensation">
+                <label for="q7c">c) Condensation</label>
+            </div>
+
+            <div class="quiz-question">
+                <label for="q8">8. Which element from the periodic table is involved in the process of transpiration, where water is released from plants into the atmosphere?</label><br>
+                <input type="radio" id="q8a" name="q8" value="Carbon">
+                <label for="q8a">a) Carbon</label><br>
+                <input type="radio" id="q8b" name="q8" value="Hydrogen">
+                <label for="q8b">b) Hydrogen</label><br>
+                <input type="radio" id="q8c" name="q8" value="Oxygen">
+                <label for="q8c">c) Oxygen</label><br>
+                <input type="radio" id="q8d" name="q8" value="Nitrogen">
+                <label for="q8d">d) Nitrogen</label>
+            </div>
+
+            <div class="quiz-question">
+                <label for="q9">9. What drives the movement of water through the stages of the water cycle?</label><br>
+                <input type="radio" id="q9a" name="q9" value="The rotation of the Earth">
+                <label for="q9a">a) The rotation of the Earth</label><br>
+                <input type="radio" id="q9b" name="q9" value="Solar energy (Sun)">
+                <label for="q9b">b) Solar energy (Sun)</label><br>
+                <input type="radio" id="q9c" name="q9" value="The Moon's gravity">
+                <label for="q9c">c) The Moon's gravity</label>
+            </div>
+
+            <div class="quiz-question">
+                <label for="q10">10. Which part of the water cycle is directly related to the periodic table element Oxygen, particularly when water droplets form on a cold surface?</label><br>
+                <input type="radio" id="q10a" name="q10" value="Evaporation">
+                <label for="q10a">a) Evaporation</label><br>
+                <input type="radio" id="q10b" name="q10" value="Precipitation">
+                <label for="q10b">b) Precipitation</label><br>
+                <input type="radio" id="q10c" name="q10" value="Condensation">
+                <label for="q10c">c) Condensation</label>
+            </div>
+
+            <button type="button" onclick="checkAnswers()">Submit</button>
+			
+		</form>
+    </div>
+
+    <!-- Feedback Section -->
+    <div id="feedback" class="feedback"></div>
+
+    <script>
+        function checkAnswers() {
+            const correctAnswers = {
+                q1: 'Water Cycle',
+                q2: 'Evaporation',
+                q3: 'Condensation',
+                q4: 'Precipitation',
+                q5: 'Hydrogen',
+                q6: 'Precipitation',
+                q7: 'Evaporation',
+                q8: 'Hydrogen',
+                q9: 'Solar energy (Sun)',
+                q10: 'Condensation'
+            };
+
+            let score = 0;
+            const totalQuestions = 10;
+
+            for (const [question, correctAnswer] of Object.entries(correctAnswers)) {
+                const userAnswer = document.querySelector(`input[name="${question}"]:checked`);
+                if (userAnswer && userAnswer.value === correctAnswer) {
+                    score++;
+                }
+            }
+
+            const feedback = document.getElementById('feedback');
+            feedback.innerHTML = `<p>You got ${score} out of ${totalQuestions} correct.</p>`;
+        }
+    </script>
+	
+	<ul><a href="interactive.html" target="_blank">Back</a></ul>
+
+made by: Gabis, Nathan Ice Xavier D.
+</body>
+</html>
+
